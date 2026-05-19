@@ -62,9 +62,9 @@ Dashboard Results
 - Python
 
 ### NLP & AI
-- spaCy
-- Sentence Transformers
-- OpenAI API
+- spaCy (`en_core_web_sm`)
+- Sentence Transformers (`all-MiniLM-L6-v2`)
+- Google Gemini API (`gemini-2.5-flash`)
 
 ### Data Processing
 - Pandas
@@ -72,7 +72,7 @@ Dashboard Results
 - Scikit-learn
 
 ### PDF Processing
-- PyMuPDF
+- PyMuPDF (fitz)
 
 ### Visualization
 - Plotly
@@ -140,7 +140,7 @@ ai-resume-analyzer/
                            v
                 +----------------------+
                 | LLM Recommendations  |
-                | (OpenAI / Claude)    |
+                | (Google Gemini)      |
                 +----------------------+
                            |
                            v
@@ -179,7 +179,7 @@ python -m spacy download en_core_web_sm
 Create a `.env` file in the project root.
 
 ```env
-OPENAI_API_KEY=your_api_key_here
+GOOGLE_API_KEY=your_api_key_here
 ```
 
 ---
